@@ -14,7 +14,7 @@ namespace Knockout_Login
         [CallbackMethod]
         public string login(string username, string password)
         {
-            string conn = "Server=(localdb)\\MSSQLLocalDB;Database=LoginForm;Trusted_Connection=True;";
+            string conn = "Server=DESKTOP-NII7NF4\\MSSQLSERVER01;Database=LoginForm;Trusted_Connection=True;";
             SqlConnection con = new SqlConnection(conn);
             object result = "";
             SqlCommand cmd = new SqlCommand();
