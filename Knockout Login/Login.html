@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login Page using Knockout</title>
+    <style type="text/css" rel="Stylesheet">
+        body {
+            background-color: black;
+        }
+
+        form {
+            padding: 10px;
+            width: 20%;
+            background-color: antiquewhite;
+            border: 2px dotted red;
+            box-shadow: 18px 18px 8px blue;
+            outline: green solid 5px;
+        }
+
+        h1 {
+            background-image: linear-gradient(red, yellow);
+            margin-top: 100px;
+            text-shadow: 3px 3px 3px brown;
+           
+        }
+        #login{
+            background-color:blue;
+            color:aqua;
+            border-radius:4px;
+        }
+        input:hover{
+            background-color:black;
+            color:greenyellow;
+            border:2px double red;
+            border-radius:5px;
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Welcome To My First Knockout WebPage</h1><br />
+        <img src="asserts/css/Namastay.png" width="200px" height="200px" alt="No Image Loaded.." />
+        <form>
+
+            <input type="text" name="username" data-bind="value:username" placeholder="Enter your User Name"><br /><br />
+            <input type="password" data-bind="value:password" placeholder="Enter Your Password" /><br /><br />
+            You've clicked times
+            <input type="submit" value="Login" id="login" data-bind="click:submit">
+            <input type="reset" value="RESET" id="login">
+        </form>
+    </center>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/knockout-3.4.2.js"></script>
+    <script type='text/javascript' src="Login.js"></script>
+    
+
+</body>
+</html>
